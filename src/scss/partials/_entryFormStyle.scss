@@ -1,0 +1,188 @@
+@import '../modules/variables';
+@import '../modules/mixins';
+@import "../modules/mediaQueryMixins";
+
+#for-entry-bg{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  background-image: $backgroundMain1-SVG;
+};
+
+.form-cnt{
+  width: 100%;
+  height: 64vh;
+  margin: 14vh 10vw 0vh 10vw;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @include mobile{
+    margin: 18vh 10vw -2vh 10vw;
+    width: 75%;
+    height: 62vh;
+  };
+  // @include tablet{
+  // };
+  @include mobile2{
+    margin: 15vh 10vw -2vh 10vw;
+    width: 65%;
+    height: 67vh;
+  };
+  @include tablet{
+    margin: 13vh 10vw -2vh 10vw;
+    width: 65%;
+    height: 70vh;
+  };
+  @include laptop{
+    margin: 13vh 10vw -3vh 10vw;
+    width: 55%;
+    height: 70vh;
+  };
+  @include desktop{
+    margin: 20vh 10vw 2vh 10vw;
+    width: 45%;
+    height: 58vh;
+  };
+  .entry-text{
+    // border: 1px solid orange;
+    text-align: center;
+    justify-content: center;
+    color: rgba(245,245,245,1);
+    background-color: rgba(30,30,30,0.4);
+    padding: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 25px;
+    margin: 30px;
+    font-weight: bold;
+    @include tablet{
+      font-size: 35px;
+    };
+    @include mobile2{
+      font-size: 40px;
+    };
+  };
+  form{
+    // border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+    color: rgba(250,250,250,1);
+
+  .errorClass{
+    border: 4px solid rgba(0,233,0,1);
+    background-color: rgba(233,200,200,0.9);
+    font-size: 20px;
+  };
+
+  input[type=text]{
+    padding-left: 8px;
+    font-size: 17px;
+    margin-top: 10px;
+    width: 240px;
+    height: 40px;
+    background-color: rgba(250,250,250,1);
+    border: 0px solid blue;
+    border-radius: 3%;
+    @include boxShadowEntry(rgba(250,250,250,1));
+    @include tablet{
+      font-size: 19px;
+      margin-top: 14px;
+      width: 250px;
+      height: 44px;
+    };
+    @include mobile2{
+      font-size: 21px;
+      width: 280px;
+      height: 50px;
+    };
+    &:focus{
+      @include boxShadowEntry(rgba(0,233,0,1));
+      border: 4px solid rgba(0,233,0,1);
+      background-color: rgba(200,233,200,0.9);
+    }
+  }
+  .errorTextActive{
+    font-size: 18px;
+    color: rgba(250,20,10,1);
+    font-weight: bold;
+  }
+  .errorTextNonActive{
+    font-size: 18px;
+    color: rgba(250,20,10,0)
+  }
+
+  .txt-cnt{
+    // border: 1px solid pink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:240px;
+    font-size: 16px;
+    .form-txt{
+      // border: 1px solid blue;
+      text-transform: uppercase;
+      margin-top: 10px;
+      @include mobile2{
+        margin-top: 14px;
+
+      };
+    }
+  }
+  input[type=submit]{
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(255,255,255,1);
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    // background-color: $main-color;
+    border: 0px solid blue;
+    border-radius: 2%;
+    @include linearGradientEf(-10deg,rgba(0,210,0,1),rgba(0,210,0,1) 47%,rgba(0,230,0,1) 50%,rgba(0,230,0,1) 100%);
+    @include tablet{
+      margin-top: 27px;
+      width: 220px;
+      height: 44px;
+    };
+    @include mobile2{
+      margin-top: 29px;
+      width: 250px;
+      height: 52px;
+    };
+    &:hover{
+      @include linearGradientEf(-10deg,rgba(0,210,0,0.8),rgba(0,210,0,0.8) 47%,rgba(0,230,0,0.8) 50%,rgba(0,230,0,0.8) 100%);
+    };
+    &:focus{
+      @include boxShadowEntrySubmit(rgba(0,233,0,1));
+      border:0px solid blue;
+      @include linearGradientEf(-10deg,rgba(0,210,0,0.8),rgba(0,210,0,0.8) 47%,rgba(0,230,0,0.8) 50%,rgba(0,230,0,0.8) 100%);
+    };
+  };
+};
+};
+.return-to-menu{
+  // border: 1px solid pink;
+  font-size: 19px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(255,255,255,1);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  width: 242px;
+  height: 49px;
+  // background-color: $main-color;
+  border: 0px solid blue;
+  border-radius: 2%;
+  @include linearGradientEf(-10deg,rgba(0,0,0,1),rgba(0,0,0,1) 47%,rgba(40,40,40,1) 50%,rgba(40,40,40,1) 100%);
+};

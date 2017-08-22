@@ -1,0 +1,95 @@
+@import "../../modules/variables";
+@import "../../modules/mixins";
+@import "../../modules/mediaQueryMixins";
+
+
+
+//SECTION 3 STYLING
+
+
+
+.advantage-main-title{
+  height:80px;
+  width: 82vw;
+  font-size: 42px;
+  // border:1px solid black;
+  font-size: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(40,40,40,1);
+  // text-transform: uppercase;
+  @include desktop{
+    font-size: 55px;
+  };
+}
+.advantage-point{
+  // border:1px solid orange;
+  color: rgba(40,40,40,1);
+  margin-top: 25px;
+  width:88vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include desktop{
+    margin-top: 35px;
+  };
+  &:last-child{
+    margin-bottom: 35px;
+  }
+
+  @for $i from 1 through 8 {
+    .advantage-pic-no#{$i}{
+      background-color: $main-color;
+      border-radius:50%;
+      margin-top: 2px;
+      height:70px;
+      width:70px;
+      background-position: center;
+      background-size: 40px 40px;
+      background-repeat: no-repeat;
+      @if $i == 1{
+        background-image: $advantageCalendar-SVG;
+      } @else if $i == 2{
+        background-image: $topShape-SVG;
+      } @else if $i == 3{
+        background-image: $diagram-SVG;
+      } @else if $i == 4{
+        background-image: $page-SVG;
+      } @else if $i == 5{
+        background-image: $weight-SVG;
+      } @else if $i == 6{
+        background-image: $exerciseType-SVG;
+      } @else if $i == 7{
+        background-image: $leisureTime-SVG;
+      } @else if $i == 8{
+        background-image: $periods-SVG;
+      }
+      }
+  }
+  .advantage-title{
+    color: rgba(40,40,40,1);
+    margin-left: 7px;
+    width:63vw;
+    font-size:5vh;
+    font-weight: bold;
+    font-style: $main-font;
+    @include desktop{
+      font-size: 6vh;
+    };
+    .advantage-text{
+      font-size: 12px;
+      font-style: $main-font;
+      font-weight: bold;
+      @include mobile{
+        font-size: 15px;
+      };
+      @include mobile2{
+        font-size: 17px;
+      };
+      @include desktop{
+        font-size: 19px;
+      };
+    }//adv text
+  }
+}//adv point

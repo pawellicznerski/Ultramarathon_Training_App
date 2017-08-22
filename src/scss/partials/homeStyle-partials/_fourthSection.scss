@@ -1,0 +1,97 @@
+@import "../../modules/variables";
+@import "../../modules/mixins";
+@import "../../modules/mediaQueryMixins";
+
+// SECTION 4 STYLING
+
+.chain-class{
+  background-attachment: fixed;
+  background-color: 	rgba(230, 230, 230,0.8);
+  background-image: $backgroundMain1-SVG;
+}
+#chain-title{
+  background-color: rgba(100, 100, 100,0.8);;
+  color:white;
+  height:10vh;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+}
+.chain-cnt{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  // border: 1px solid green;
+  .chain-all-links{
+    width:190px;
+    height:190px;
+    margin: 10px;
+    // background-color: $main-color-opacity;
+      @include linearGradientEf(-45deg,rgba(0,228,0,0.8),rgba(0,228,0,0.8) 47%,$main-color-opacity 50%,$main-color-opacity 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    @include mobile2{
+      width:230px;
+      height:230px;
+      margin: 25px 20px 25px 20px;
+    };
+    @include laptop{
+      margin: 60px 10px 60px 10px;
+      // margin-bottom: 60px;
+      width:170px;
+      height:170px;
+    };
+    @include desktop{
+      margin: 60px 10px 60px 10px;
+      // margin-bottom: 60px;
+      width:210px;
+      height:210px;
+    };
+
+    .chain-link-no{
+      font-weight: bold;
+      color: white;
+      font-size: 70px;
+    }
+    @for $i from 1 through 5 {
+      .chain-link-texts#{$i}{
+        text-align:center;
+        font-weight: bold;
+        font-size: 22px;
+       }
+    }
+    .chain-link-texts1{
+      margin-bottom: 25px;
+    }
+    .chain-link-texts2{
+      margin-bottom: 25px;
+      @include mobile2{
+        margin-bottom: 50px;
+      };
+      @include laptop{
+        margin-bottom: 25px;
+      };
+      @include desktop{
+        margin-bottom: 50px;
+      };
+    }
+    .chain-link-texts3{
+      margin-bottom: 52px;
+    }
+    .chain-link-texts4{
+      margin-bottom: 52px;
+    }
+    .chain-link-texts5{
+      margin-bottom: 52px;
+    }
+
+  }
+
+}

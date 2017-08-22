@@ -1,0 +1,100 @@
+{
+  "people": [
+    {
+      "login": "Krzychu3",
+      "email": "pawellicznerski3@poczta.fm",
+      "weight": "87",
+      "height": "189",
+      "trainingType": "300",
+      "dateStart": "2017-07-01",
+      "dateEnd": "2017-10-23",
+      "numberOfTrainingDays": 115,
+      "newData": true,
+      "id": 2
+    },
+    {
+      "login": "Krzychu1",
+      "email": "pawellicznerski@poczta.fm",
+      "weight": "87",
+      "height": "189",
+      "trainingType": "200",
+      "dateStart": "2017-07-01",
+      "dateEnd": "2017-10-23",
+      "numberOfTrainingDays": 115,
+      "newData": true,
+      "id": 3
+    },
+    {
+      "login": "Krzychu8",
+      "email": "pawellicznerski@poczta.fm",
+      "weight": "87",
+      "height": "189",
+      "trainingType": "300",
+      "dateStart": "2017-07-01",
+      "dateEnd": "2017-10-23",
+      "numberOfTrainingDays": 115,
+      "newData": true,
+      "id": 5
+    },
+    {
+      "login": "Krzychy5",
+      "email": "pawellicznerski@poczta.fm",
+      "weight": "45",
+      "height": "167",
+      "trainingType": "300",
+      "dateStart": "2017-09-01",
+      "dateEnd": "2018-10-02",
+      "numberOfTrainingDays": 397,
+      "newData": true,
+      "id": 6
+    },
+    {
+      "login": "Krzychu5swqqd",
+      "email": "pawellicznerski@poczta.fm",
+      "weight": "45",
+      "height": "167",
+      "trainingType": "300",
+      "dateStart": "2017-08-01",
+      "dateEnd": "2017-12-02",
+      "numberOfTrainingDays": 124,
+      "newData": true,
+      "id": 8
+    },
+    {
+      "login": "Krzychu53",
+      "email": "pawellicznerski2@poczta.fm",
+      "weight": "30",
+      "height": "130",
+      "trainingType": "200",
+      "dateStart": "2017-07-17",
+      "dateEnd": "2017-10-31",
+      "numberOfTrainingDays": 107,
+      "newData": true,
+      "id": 9
+    },
+    {
+      "login": "wqswq3",
+      "email": "pawellicznedrski@poczta.fm",
+      "weight": "30",
+      "height": "130",
+      "trainingType": "200",
+      "dateStart": "2017-07-19",
+      "dateEnd": "2017-10-31",
+      "numberOfTrainingDays": 105,
+      "newData": true,
+      "id": 10
+    },
+    {
+      "login": "Krzychu5",
+      "email": "pawellicznerski@poczta.fm",
+      "weight": "45",
+      "height": "167",
+      "trainingType": "300",
+      "dateStart": "2017-08-01",
+      "dateEnd": "2017-12-02",
+      "numberOfTrainingDays": 124,
+      "newData": false,
+      "id": 11
+    }
+  ]
+}

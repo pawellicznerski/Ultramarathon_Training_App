@@ -1,0 +1,34 @@
+
+#moveToDay-CNT{
+  position:fixed;
+  right:10px;
+  top:10vh;
+  width:140px;
+  height: 70px;
+  background-color: red;
+  display:flex;
+  flex-wrap: wrap;
+
+  #btn-cnt{
+    width:30px;
+    height: 100%;
+    background-color: blue;
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;
+    button{
+      width: 100%;
+      height: 100%;
+      writing-mode: vertical-lr;
+      text-orientation: sideways-right;
+    }
+  }
+  #moveToDay-field{
+    // width:30px;
+    // height: 100%;
+    // background-color: blue;
+    input{
+      width: 70%;
+    }
+  }
+
+}

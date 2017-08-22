@@ -1,0 +1,15 @@
+@import './scss/partials/navStyle';
+@import './scss/partials/homeStyle';
+@import './scss/partials/footer';
+@import './scss/grid/grid';
+@import './scss/partials/entryFormStyle';
+@import './scss/partials/fillInFormStyle';
+@import './scss/partials/trainingPlanStyle';
+@import './scss/partials/common-partials/fullScreenWarningsStyles';
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: $main-font;
+}

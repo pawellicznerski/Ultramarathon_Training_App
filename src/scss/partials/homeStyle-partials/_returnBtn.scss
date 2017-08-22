@@ -1,0 +1,23 @@
+@import "../../modules/variables";
+@import "../../modules/mixins";
+
+
+
+
+// FIXED BTN TO RETURN TO THE INITIAL POSITION
+
+.show-return-btn{
+  background-color: $main-color;
+  background-image: $arrowTop-SVG;
+  background-size: contain;
+  width:40px;
+  height:40px;
+  font-size: 30px;
+  font-weight: 600;
+  font: $main-font;
+  position:fixed;
+  left:0;
+  top:30vh;
+  text-transform: uppercase;
+  @include boxShadow(grey);
+}

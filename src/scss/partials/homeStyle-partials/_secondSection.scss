@@ -1,0 +1,129 @@
+@import "../../modules/variables";
+@import "../../modules/mixins";
+@import "../../modules/mediaQueryMixins";
+
+//SECTION 2 BREAKING DIV WITH CURVED LINE
+
+#encourage-advantage-break{
+  height: 10vh;
+  background-position: center;
+  background-image: $break-to-advMobile-SVG;
+  background-size: cover;
+  @include laptop{
+    height: 15vh;
+  };
+}
+
+//SECTION 2 STYLING
+
+#encourage-entry{
+  background-image: $backgroundsection2-SVG;
+  background-color: $main-color-opacity;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.encourage-class{
+  height: 50vh;
+  // @include mobile{
+  //   height: 49vh;
+  // }
+  // @include tablet{
+  //   height: 39vh;
+  // }
+  // @include mobile2{
+  //   height: 39vh;
+  // };
+}
+
+.encourage-text-cnt{
+  // border: 1px solid blue;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  @include mobile{
+    margin-top: 10px;
+  }
+  .encourage-text-psc-cnt{
+    // border: 1px solid blue;
+    color: rgba(50,50,50,1);
+    width:90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto auto auto 20px;
+    font-size: 36px;
+    font-weight: bold;
+    @include mobile{
+      width:860px;
+      font-size: 34px;
+    };
+    @include tablet{
+      font-size: 38px;
+      margin-left:60px
+    };
+    @include mobile2{
+      font-size: 42px;
+      margin-left:120px
+    }
+    @include laptop{
+      font-size: 46px;
+      margin-left:210px
+    }
+    .moving-numbersAndKm{
+      // border: 1px solid blue;
+      width: 180px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      color:rgba(70,70,70,0.95);
+
+      @include mobile{
+        height: 60px;
+      };
+      @include mobile2{
+        width: 200px;
+        height: 60px;
+      };
+      @for $i from 0 through 3 {
+      .moving-numbers#{$i}{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        text-transform: lowercase;
+        color:rgba(70,70,70,0.95);
+        font-size: 25px+(15px*$i);
+        width:120px;
+        height:50px;
+        @include animationText(all,0.2s,linear);
+      }//moving-numbers
+    }//loop for
+    }//end of moving-numbersAndKm
+  }// end ofencourage-text-psc-cnt
+  .encourage-text-final{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(70,70,70,0.95);
+    padding: 10px;
+    height:50px;
+    width:73vw;
+    text-transform: uppercase;
+    font-size: 22px;
+    @include mobile{
+      width:60vw;
+      height: 60px;
+      font-size: 27px;
+    }
+    @include mobile2{
+      width:45vw;
+      height: 79px;
+      font-size: 33px;
+     };
+  }
+}//encourage-text-cnt

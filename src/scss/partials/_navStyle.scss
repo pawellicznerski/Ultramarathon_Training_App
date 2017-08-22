@@ -1,0 +1,122 @@
+@import '../modules/variables';
+@import '../modules/mixins';
+@import "../modules/mediaQueryMixins";
+
+#row-1{
+  background-color: rgba(255,255,255,0.9);
+  display:flex;
+  align-items: center;
+  height: 46px;
+  @include boxShadow(#888888);
+  @include tablet {
+    height: 66px;
+  }
+  @include laptop {
+    height: 72px;
+  }
+  .menu-logo{
+    height: 37px;
+    width:37px;
+    margin-left: 20px;
+    background-image: $logo-SVG2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include tablet{
+      height: 48px;
+      width:260px;
+      margin-left: 20px;
+      background-image: $logo-SVG;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    @include laptop {
+      height: 55px;
+      width:280px;
+      margin-left: 30px;
+    }
+  }
+  @for $i from 0 through 1 {
+    .nav-btns-cont#{$i}{
+      background-color: $main-color;
+      height: 46px;
+      width:210px;
+      display:flex;
+      align-items: center;
+      @include animationSideBar(all 0.5s ease);
+      justify-content: space-between;
+      position: absolute;
+      right: -158px+((-158px*(-1))*$i);
+      @include tablet{
+        right:0;
+        height: 56px;
+        background-color: rgba(255,255,255,0);
+        width:330px;
+        margin-right: 20px;
+      }
+      @include laptop{
+        right:0;
+        height: 60px;
+        background-color: rgba(255,255,255,0);
+        width:390px;
+        margin-right: 40px;
+      }
+      .menu-btn#{$i}{
+        position: relative;
+        height:35px;
+        width:35px;
+        margin-left: 10px;
+        @include animationMenuBtn(90deg*((-1)*$i))
+        background-image: $menu-SVG;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include tablet{
+          display: none;
+        }
+      }
+      .nav-btns{
+        height:30px;
+        width:70px;
+        border-radius: 10%;
+        margin-right: 5px;
+        display:flex;
+        align-items: flex-start;
+        justify-content:center;
+        @include linearGradientEf(-20deg,rgba(235,235,235,1),rgba(235,235,235,1) 47%,rgba(250,250,250,1) 50%,rgba(250,250,250,1) 100%);
+        color: black;
+        @include tablet{
+          // background-color: $main-color-opacity;
+          @include linearGradientEf(-15deg,rgba(0,228,0,0.8),rgba(0,228,0,0.8) 47%,$main-color-opacity 50%,$main-color-opacity 100%);
+          color: white;
+          height:50px;
+          width:150px;
+          border-radius: 5%;
+          margin-right: 15px;
+        }
+        @include laptop{
+          height:54px;
+          width:180px;
+          margin-right: 25px;
+        }
+        p{
+          margin-top: 10px;
+          font-size: 10px;
+          text-transform: uppercase;
+          @include tablet{
+            margin-top: 13px;
+            font-size: 20px;
+            font-weight: bold;
+          }
+        }
+        &:hover{
+          background-color: white;
+          border: 1px solid black;
+          color: black;
+          @include tablet{
+            background-color: rgba(240,240,240,0.9);
+          }
+        }
+      }//end of nav-btns
+    }//end of nav-btns-cont
+  }//end of for
+}// and of row-1

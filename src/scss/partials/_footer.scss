@@ -1,0 +1,62 @@
+@import "../modules/variables";
+@import "../modules/mixins";
+
+.footer-container{
+  .container{
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(50,50,50,1);
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: center;
+    .logo-white{
+      height: 8vh;
+      width: 65vw;
+      margin-left: 10vw;
+      // border: 1px solid yellow;
+      background-image: $logoWhite-SVG;
+      background-size:contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      @include mobile{
+        height: 10vh;
+      };
+    }//end of logo-white
+
+    .socials{
+      margin-top: 2vh;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      // border: 1px solid blue;
+
+      @each $i in fb,pin,lin,g{
+        .#{$i}{
+          margin-left: 10px;
+          height: 50px;
+          width: 50px;
+          // border: 1px solid orange;
+          background-size:cover;
+          background-image:url("./components/images/#{$i}-icon.svg");
+          background-position: center;
+          @include mobile{
+            margin-left: 15px;
+            height: 60px;
+            width: 60px;          };
+        }
+      }//snd of each social
+    }//end of socials
+  }//and oc container
+
+  .copy-rights{
+    background-color: rgba(0,0,0,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color:white;
+    height: 50px;
+    width: 100vw;
+  }
+}// end of footer container

@@ -1,0 +1,24 @@
+@import '../../modules/variables';
+@import '../../modules/mixins';
+@import "../../modules/mediaQueryMixins";
+
+
+#returnToMenu-FIF{
+    // border: 1px solid pink;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(255,255,255,1);
+    margin: 40px 0 40px 0;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    border: 0px solid blue;
+    border-radius: 2%;
+    @include linearGradientEf(-10deg,rgba(0,0,0,1),rgba(0,0,0,1) 47%,rgba(40,40,40,1) 50%,rgba(40,40,40,1) 100%);
+    @include tablet{
+      font-size: 19px;
+      width: 240px;
+      height: 50px;
+    };
+}//end of returnToMenu-FIF

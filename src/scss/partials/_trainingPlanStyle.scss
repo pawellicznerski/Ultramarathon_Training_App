@@ -1,0 +1,212 @@
+@import '../modules/variables';
+@import '../modules/mixins';
+@import "../modules/mediaQueryMixins";
+@import "./trainingPlanStyle-partials/infoWindowStyle";
+@import "./trainingPlanStyle-partials/moveToDayField";
+
+
+#training-plan-bg{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  background-image: $backgroundMain1-SVG;
+
+}
+
+#training-plan-cnt{
+  margin-top: 46px;
+  // height: 100vh;
+  width: 95vw;
+  // margin: 48px 10vw 0vh 10vw;
+  background-color: rgba(0,0,0,0.7);
+  color: rgba(253,253,253,1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @include mobile{
+    width: 90vw;
+
+  };
+  @include tablet{
+    width: 80vw;
+    margin: 66px 10vw 0vh 10vw;
+    // width: 800px;
+  };
+  @include laptop{
+    margin: 72px 10vw 0vh 10vw;
+  };
+  .side-btns-td{
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;
+    background-color: $main-color;
+    width:30px;
+    height:70px;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+    font-weight: 600;
+    position:fixed;
+    right:0;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    @include boxShadow(grey);
+  }
+  #save-btn{
+    top:30vh;
+  }
+  #remove-tr-btn{
+    top:45vh;
+    height:70px;
+  }
+  #intro-user-cnt{
+    width: 80vw;
+    text-align: center;
+    vertical-align: middle;
+    // padding: 8px 5px 8px 5px;
+    #user-name{
+      font-size: 25px;
+      margin-top: 16px;
+      background-color: rgba(0,0,0,0.6);
+      padding: 14px 5px;
+      @include mobile{
+        font-size: 35px;
+      };
+    }
+    #user-bmi{
+      font-size: 14px;
+      margin-top: 16px;
+      background-color: rgba(0,0,0,0.6);
+      padding: 10px 5px;
+      @include mobile{
+        font-size: 18px;
+      };
+      @include laptop{
+        font-size: 25px;
+        margin-bottom: 24px;
+      };
+    }
+  }
+  .training-day{
+    // border: 1px solid yellow;
+    margin: 10px 0 10px 0;
+    width: 85vw;
+    height: 114px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .initial-no-cnt{
+      width: 65px;
+      height: 114px;
+      text-align: center;
+      vertical-align: middle;
+      p{
+        padding: 10px 0 0px 0;
+        height: 80px;
+        color: rgba(250,250,250,1);
+        font-size: 35px;
+        @include linearGradientEf(-18deg,rgba(0,190,0,1),rgba(0,190,0,1) 47%,rgba(0,230,0,1) 50%,rgba(0,230,0,1) 100%);
+        display: flex;
+        flex-direction: column;
+      }
+      .lastday{
+        @include linearGradientEf(-18deg,rgba(190,0,0,1),rgba(190,0,0,1) 47%,rgba(230,0,0,1) 50%,rgba(230,0,0,1) 100%);
+      }
+      span{
+        margin: -3px 0 0px 0;
+        font-size: 18px;
+      }
+      p:last-child{
+        margin-top: 3px;
+        height: 32px;
+        font-size: 11px;
+        font-weight: bold;
+        @include linearGradientEf(-18deg,rgba(0,0,0,1),rgba(0,0,0,1) 47%,rgba(40,40,40,1) 50%,rgba(40,40,40,1) 100%);
+      }
+    }//.initial-no-cnt
+    .decription-cnt{
+      font-size: 15px;
+      display: flex;
+      flex-flow: wrap column;
+      padding: 3px 0px 0px 4px;
+      height: 117px;
+      // border: 1px solid blue;
+      width:60vw;
+      margin-left: 7px;
+      @include linearGradientEf(-18deg,rgba(20,20,20,1),rgba(20,20,20,1) 47%,rgba(40,40,40,1) 50%,rgba(40,40,40,1) 100%);
+      @include mobile{
+        width:400px;
+        font-size: 18px;
+      };
+      @include tablet{
+        width:510px;
+      };
+      @include laptop{
+        width:700px;
+        font-size: 21px;
+        padding: 6px 0px 0px 6px;
+        margin-left: 14px;
+      };
+      @include desktop{
+        width:820px;
+        padding: 6px 0px 0px 10px;
+        margin-left: 19px;
+      };
+      p{
+        // border: 1px solid red;
+        width:48vw;
+        font-size: 13.2px;
+        @include mobile{
+          font-size: 16px;
+          width:300px;
+        };
+        @include tablet{
+          font-size: 17px;
+          width:425px;
+        };
+        @include laptop{
+          font-size: 20px;
+          width:530px;
+        };
+      }
+      .lastdescription{
+        margin: 10px 5px 0 10px;
+        width:60vw;
+        font-size: 20px;
+        @include tablet{
+          margin: 25px 5px 0 20px;
+          font-size: 30px;
+        };
+      }
+      .infoIcon-CNT{
+        margin: 33px 5px 0 0;
+        // margin-top: 33px;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        cursor:pointer;
+        background-image: $iconInfo-SVG;
+        background-color: white;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: blue;
+        border-radius: 50%;
+        border: 3px solid white;
+
+        @include mobile{
+          width: 45px;
+          height: 45px;
+        };
+        @include mobile{
+          margin-top: 25px;
+          width: 55px;
+          height: 55px;
+        };
+      }
+    }
+  }//training-day
+}//#training-plan-cnt

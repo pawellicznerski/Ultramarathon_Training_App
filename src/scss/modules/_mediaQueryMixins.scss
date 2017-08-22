@@ -1,0 +1,44 @@
+
+// @for $i from 1 through 6 {
+//   @mixin nth($screen-names, $i) {
+//     @media (min-width: nth($screen-widths, $i)) {
+//       @content;
+//     }
+//   }
+// }
+
+@mixin mobile {
+  @media (min-width:  600px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width:  768px) {
+    @content;
+  }
+}
+
+@mixin mobile2 {
+  @media (min-width:  960px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width:  1200px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width:  1440px) {
+    @content;
+  }
+}
+
+@mixin HDdesktop {
+  @media (min-width:  1600px) {
+    @content;
+  }
+}

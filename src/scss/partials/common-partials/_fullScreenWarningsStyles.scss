@@ -1,0 +1,61 @@
+@import '../../modules/variables';
+@import '../../modules/mixins';
+@import "../../modules/mediaQueryMixins";
+
+.fullScreenInfo-CNT{
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 50;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .fullScreenInfo-txt{
+    text-align: center;
+    margin: 0 4vw 6vh 4vw;
+    font-size: 38px;
+    font-weight: bold;
+    color: rgba(250,250,250,1);
+    p{
+      margin-left: 8vw;
+      @include mobile2{
+        margin-left: 0;
+      };
+    }
+  }
+  .red-btn{
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(255,255,255,1);
+    margin: 40px 0 40px 0;
+    border-radius: 10px;
+    width: 300px;
+    height: 80px;
+    border: 0px solid blue;
+    border-radius: 2%;
+    @include linearGradientEf(-10deg,rgba(240,10,10,1),rgba(240,10,10,1) 47%,rgba(230,10,10,1) 50%,rgba(230,10,10,1) 100%);
+
+  }
+  .green-btn{
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(255,255,255,1);
+    margin: 40px 0 40px 0;
+    border-radius: 10px;
+    width: 300px;
+    height: 80px;
+    border: 0px solid blue;
+    border-radius: 2%;
+    @include linearGradientEf(-10deg,rgba(10,240,10,1),rgba(10,240,10,1) 47%,rgba(10,230,10,1) 50%,rgba(10,230,10,1) 100%);
+
+  }
+}
+
+.showInfoText-non-active{
+  display: none;
+  background-color: red;
+}
