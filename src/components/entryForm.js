@@ -46,8 +46,12 @@ handleRegistrationData = (e) => {
   };//end of the condition
 }//end of handleRegistrationData
 
+noServer=()=>{
+  this.props.history.push({pathname: `/nowekonto/trainingPlan/noServer`});
+}
+
 loadingTrainingPlanEntry=(dataFromServer)=>{
-   this.props.history.push({pathname: `/nowekonto/trainingPlan/${dataFromServer.login}`,
+   this.props.history.push({pathname: `/Ultramarathon_Training_App/nowekonto/trainingPlan/${dataFromServer.login}`,
      state: {
        login:dataFromServer.login,
        email:dataFromServer.email,

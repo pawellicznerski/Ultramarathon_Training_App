@@ -56,8 +56,8 @@ export class Home extends Component {
           <div className="welcome-text-cnt col-10">
             <div className="welcome-text">
               <div className="welcome-text-top">Profesionalny ultramaratonowy trening rowerowy w kilka chwil.</div>
-              <NavLink to={`/wyswietltrening`} style={{textDecoration:"none",color:"white"}}><div className="welcome-btn" >nowy trening</div></NavLink>
-              <Route exact path={`/wyswietltrening`}/>
+              <NavLink to={`/Ultramarathon_Training_App/wyswietltrening`} style={{textDecoration:"none",color:"white"}}><div className="welcome-btn" >nowy trening</div></NavLink>
+              <Route exact path={`/Ultramarathon_Training_App/wyswietltrening`}/>
             </div>
             <div className="move-down-cnt"><div onClick={this.moveDown} className="move-down-btn">&nabla;</div></div>
           </div>

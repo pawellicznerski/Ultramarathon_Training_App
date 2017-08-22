@@ -281,7 +281,7 @@ loadingTrainingPlan=()=>{
    });
    window.removeEventListener('scroll', this.scrollBlocker);
    const loadingPlanLogin= this.state.login;
-   this.props.history.push({pathname: `/nowekonto/trainingPlan/${loadingPlanLogin}`,
+   this.props.history.push({pathname: `/Ultramarathon_Training_App/nowekonto/trainingPlan/${loadingPlanLogin}`,
      state: {
        login:this.state.login,
        email:this.state.email,
