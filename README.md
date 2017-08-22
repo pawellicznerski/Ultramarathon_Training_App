@@ -1,3 +1,6 @@
+<H2>Do zapoznania się z stroną bez zawartości do której potrzebny jest server(na potrzeby projektu używam json-server, który w prostu sposób mozna zainstalować kozystając z instrukcji dostepnej w tym dokumencie) zapraszam o kliknięcie w poniższy link<H2>
+http://pawellicznerski.github.io/Ultramarathon_Training_App
+
 <p>Nie da się wyświetlić planu treningowego bez kontaktu z serwerem. Dlatego żeby poznać w pełni projekt (z wyświetlonym planem treningowym) należy:</p><br/>
 <h3>1.Ściągnać projekt na swój komputer</h3>
 <p> {"np. otwóż folder w którym chcesz mieć ten projekt. Otwóż w nim terminal (CTRL+ALT+T) i wpisz w nim komendę: git clone https://github.com/pawellicznerski/Ultramarathon_Training_App.git"}</p><br/>
