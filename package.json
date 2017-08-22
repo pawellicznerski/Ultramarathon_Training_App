@@ -6,9 +6,12 @@
     "node-sass-chokidar": "0.0.3",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-pdf": "^1.6.1"
+    "react-pdf": "^1.6.1",
+    "react-router-dom": "^4.1.2",
   },
+  "homepage": "http://pawellicznerski.github.io/Ultramarathon_Training_App",
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "node-sass-chokidar": "0.0.3",
     "react-scripts": "0.9.5"
   },
@@ -19,6 +22,8 @@
     "build": "react-scripts build",
     "start-js": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }

@@ -33,19 +33,20 @@ render() {
       <div className="App">
         <div className="container">
               <nav id="row-1">
-                <NavLink to="/"><div className="menu-logo"> </div></NavLink>
+                <NavLink to={"/"||"/Ultramarathon_Training_App"}><div className="menu-logo"> </div></NavLink>
                 <div className={this.state.active ? "nav-btns-cont0": "nav-btns-cont1"}>
                   <div className={this.state.active ? "menu-btn0": "menu-btn1"} onClick={this.toggleClass}></div>
-                  <NavLink to={`/wyswietltrening`} style={{ textDecoration: 'none'}} ><div className="nav-btns nav-btn1-colr"><p>logowanie</p></div></NavLink>
-                  <NavLink to={`/nowekonto`} style={{ textDecoration: 'none' }} ><div className="nav-btns nav-btn2-colr"><p>nowe konto</p></div></NavLink>
+                  <NavLink to={`/Ultramarathon_Training_App/wyswietltrening`} style={{ textDecoration: 'none'}} ><div className="nav-btns nav-btn1-colr"><p>logowanie</p></div></NavLink>
+                  <NavLink to={`/Ultramarathon_Training_App/nowekonto`} style={{ textDecoration: 'none' }} ><div className="nav-btns nav-btn2-colr"><p>nowe konto</p></div></NavLink>
                 </div>
               </nav>
             <Switch>
               <Route exact path="/" component={Home}/>
-              <Route exact path="/wyswietltrening" component={EntryForm}/>
-              <Route exact path="/nowekonto" component={FillInForm}/>
-              <Route exact path={`/nowekonto/trainingPlan/:login`} component={TrainingPlan} state/>
-              <Route exact path={`/nowekonto/trainingPlan/:login/PDF`} component={TrainingPlanPDF}/>
+              <Route exact path="/Ultramarathon_Training_App" component={Home}/>
+              <Route exact path="/Ultramarathon_Training_App/wyswietltrening" component={EntryForm}/>
+              <Route exact path="/Ultramarathon_Training_App/nowekonto" component={FillInForm}/>
+              <Route exact path={`/Ultramarathon_Training_App/nowekonto/trainingPlan/:login`} component={TrainingPlan} state/>
+              <Route exact path={`/Ultramarathon_Training_App/nowekonto/trainingPlan/:login/PDF`} component={TrainingPlanPDF}/>
               <Route component={NoMatch}/>
             </Switch>
             <footer>

@@ -91,13 +91,15 @@ handleDates=()=>{
            renderNotEnoughTimeToPrepare: true,
            isBlocking: false,
           });
+        window.scrollTo(0,0);
         window.addEventListener('scroll', this.scrollBlocker);
       } else {
         this.setState({
           isBlocking: false,
           renderAreYouSureToGoToTraining: true,
          });
-         window.addEventListener('scroll', this.scrollBlocker);
+         window.scrollTo(0,0);
+         window.addEventListener('scroll',this.scrollBlocker);
       }
     }
 }
@@ -188,10 +190,6 @@ handleValidation=(name,blurredFieldData,basicDataFormat,currentWarningBlurText,c
     fetch(`http://localhost:3000/people?${name}=${blurredFieldData}`).then(resp => resp.json())
       .then(data => {
         if(data.length!==0){
-          // console.log(name);
-          // console.log(data);
-          // console.log(data.length);
-          // console.log("jest w bazie");
           const nameWarning = `empty${name}FieldWarning`;
           this.setState({
             [nameWarning]: currentFetchWarningBlurText,
