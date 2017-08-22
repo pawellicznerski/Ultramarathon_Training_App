@@ -29,7 +29,8 @@
     width: 800px;
   };
   @include laptop{
-    margin: 0px 10vw 0vh 10vw;
+    height: 100vh;
+    margin: 70px 10vw 0vh 10vw;
   };
   .entry-text-FIF{
    height: 6vh;
