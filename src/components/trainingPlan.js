@@ -133,9 +133,11 @@ export class TrainingPlan extends Component {
   render(){
       return <div className="training-grid">
               <Prompt when={this.state.isBlocking} message={"Jeżeli wyjdziesz wszystkie pola zostana utracone?"}/>
-              <MoveToDay data={this.props.location.state}></MoveToDay>
               <TrainingDay trainingPlanArr={this.makingTrainingPeriods()} bmiTip={this.bmiTip()} state={this.props.location.state} history={this.props.history}></TrainingDay>
             </div>
   }//render end
 // }//registration form end
 };
+
+
+// <MoveToDay data={this.props.location.state}></MoveToDay>

@@ -5,16 +5,16 @@ http://pawellicznerski.github.io/Ultramarathon_Training_App
 <p>Nie da się wyświetlić planu treningowego bez kontaktu z serwerem. Dlatego żeby poznać w pełni projekt (z wyświetlonym planem treningowym) należy (jeżeli jednak nie masz takiej mozliwości, żeby podłaczyć json-server to zapraszam do obejżenie Print screen-ów z cześci treningowej projektu):</p><br/>
 
 <h3>1.Ściągnać projekt na swój komputer</h3>
-<p> {"np. otwóż folder w którym chcesz mieć ten projekt. Otwóż w nim terminal (CTRL+ALT+T) i wpisz w nim komendę: git clone https://github.com/pawellicznerski/Ultramarathon_Training_App.git"}</p><br/>
+<p> np. otwóż folder w którym chcesz mieć ten projekt. Otwóż w nim terminal (CTRL+ALT+T) i wpisz w nim komendę: git clone https://github.com/pawellicznerski/Ultramarathon_Training_App.git</p>
 
 <h3>2.Zainstalować pakiet</h3>
-<p> {"Wejdź do folderu Ultramarathon_Training_App i otwóż w nim terminal (CTRL+ALT+T), po czym wpisz komendę: npm install" }</p>
+<p> Wejdź do folderu Ultramarathon_Training_App i otwóż w nim terminal (CTRL+ALT+T), po czym wpisz komendę: npm install</p>
 
 <h3>3. Uruchomić JSON.SERVER</h3>
-<p> {"W tym samym teminalu zainstaluj json-server komendą: npm install -g json-server i urochom go komedą: json-server --watch db.json" }</p>
+<p> W tym samym teminalu zainstaluj json-server komendą: npm install -g json-server i urochom go komedą: json-server --watch db.json</p>
 
 <h3>4. Uruchomić stronę</h3>
-<p> {"W osobnej zakładce wpisz komendę: npm start i zgódź się (Y) na użycie innego portu (localhost:3000 jest juz zajety przez json-server)" }</p>
+<p> W osobnej zakładce wpisz komendę: npm start i zgódź się (Y) na użycie innego portu (localhost:3000 jest juz zajety przez json-server)</p>
 
 <h3>Strona uruchomiona!</h3><br/>
 

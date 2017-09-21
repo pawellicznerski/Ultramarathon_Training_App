@@ -91,6 +91,7 @@ render(){
               <div className="entry-text">
                 Załaduj swój plan treningowy:
               </div>
+              <h4 style={{color:"red",backgroundColor:"white",textAlign:"center"}}>Opcja dostępna po instalacji programu. Żeby zobaczyć trening stwórz nowe konto.</h4>
                 <form onSubmit={this.handleRegistrationData}>
                   <div className="txt-cnt">
                     <div className="form-txt">Login:</div>
