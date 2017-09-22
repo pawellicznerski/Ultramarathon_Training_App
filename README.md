@@ -4,7 +4,7 @@
 
 
 <p>Do zapoznania się z stroną bez zawartości do której potrzebny jest server(na potrzeby projektu używam json-server, który w prostu sposób mozna zainstalować kozystając z instrukcji dostepnej w tym dokumencie) zapraszam o kliknięcie w poniższy link<p>
-http://pawellicznerski.github.io/Ultramarathon_Training_App
+DEMO: http://pawellicznerski.github.io/Ultramarathon_Training_App
 <br/>
 <p>Nie da się wyświetlić planu treningowego bez kontaktu z serwerem. Dlatego żeby poznać w pełni projekt (z wyświetlonym planem treningowym) należy (jeżeli jednak nie masz takiej mozliwości, żeby podłaczyć json-server to zapraszam do obejżenie Print screen-ów z cześci treningowej projektu):</p><br/>
 
