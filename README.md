@@ -1,4 +1,8 @@
 <h3>Witam w moim rowerowym projekcie!</h3>
+
+<h4>Użyte w projekcie: HTML, CSS, Sass, RWD, javascript, React.js, React-Router, Regex</h4><br/>
+
+
 <p>Do zapoznania się z stroną bez zawartości do której potrzebny jest server(na potrzeby projektu używam json-server, który w prostu sposób mozna zainstalować kozystając z instrukcji dostepnej w tym dokumencie) zapraszam o kliknięcie w poniższy link<p>
 http://pawellicznerski.github.io/Ultramarathon_Training_App
 <br/>
