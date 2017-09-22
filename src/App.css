@@ -574,6 +574,9 @@
   justify-content: center;
   align-items: center;
   text-transform: uppercase; }
+  @media (max-width: 360px) {
+    #chain-title {
+      font-size: 20px; } }
 
 .chain-cnt {
   display: flex;
@@ -841,6 +844,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 360px) {
+    .form-cnt {
+      height: 440px; } }
   @media (min-width: 600px) {
     .form-cnt {
       margin: 18vh 10vw -2vh 10vw;
@@ -1001,7 +1007,7 @@
 
 .select-cnt {
   width: 100vw;
-  height: 9vh;
+  height: 90px;
   background-color: rgba(30, 30, 30, 0.4);
   display: flex;
   flex-wrap: wrap;
@@ -1017,6 +1023,9 @@
     vertical-align: sub;
     padding-top: 3px;
     font-size: 20px; }
+    @media (max-width: 360px) {
+      .select-cnt .descr-select {
+        font-size: 16px; } }
     @media (min-width: 768px) {
       .select-cnt .descr-select {
         width: 398px;
@@ -1031,13 +1040,16 @@
     @media (min-width: 768px) {
       .select-cnt #select-options-cnt {
         width: 398px;
-        height: 3.7vh; } }
+        height: 10px; } }
     .select-cnt #select-options-cnt input {
       margin-left: 10px;
       margin-top: 4px; }
     .select-cnt #select-options-cnt .options-select {
       font-size: 16px;
       margin-left: 7px; }
+      @media (max-width: 360px) {
+        .select-cnt #select-options-cnt .options-select {
+          font-size: 13px; } }
   .select-cnt .single-down-error-FIF-active {
     text-align: center;
     width: 100%;
@@ -1092,7 +1104,7 @@
   background-image: url("./components/images/backgroundMain1.svg"); }
 
 #fillInForm-cnt {
-  min-height: 500px;
+  min-height: 540px;
   width: 100vw;
   margin: 48px 15px 0 15px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -1159,6 +1171,10 @@
     #fillInForm-cnt .inputs-cnts .descr-field {
       font-size: 19px;
       width: 120px; }
+      @media (max-width: 360px) {
+        #fillInForm-cnt .inputs-cnts .descr-field {
+          font-size: 16px;
+          width: 90px; } }
     #fillInForm-cnt .inputs-cnts input[type=text], #fillInForm-cnt .inputs-cnts input[type=number], #fillInForm-cnt .inputs-cnts input[type=date], #fillInForm-cnt .inputs-cnts input[type=submit] {
       padding-left: 5px;
       font-size: 14px;

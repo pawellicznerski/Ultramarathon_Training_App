@@ -7,6 +7,11 @@
 //   }
 // }
 
+@mixin iphone {
+  @media (max-width:  360px) {
+    @content;
+  }
+}
 @mixin mobile {
   @media (min-width:  600px) {
     @content;

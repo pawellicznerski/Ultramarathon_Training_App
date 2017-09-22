@@ -20,13 +20,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include iphone{
+    height: 440px
+  };
   @include mobile{
     margin: 18vh 10vw -2vh 10vw;
     width: 75%;
     height: 500px
   };
-  // @include tablet{
-  // };
   @include mobile2{
     margin: 15vh 20px -2vh 20px;
     width: 65%;
