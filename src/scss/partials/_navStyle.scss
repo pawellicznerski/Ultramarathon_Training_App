@@ -47,7 +47,7 @@
     min-width:35px;
     display:flex;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
     @include tablet{
       right:0;
       height: 56px;
@@ -62,14 +62,14 @@
       width:390px;
       margin-right: 40px;
     }
-    &_closed{
-      @include sideBarAnimation(closed 1.4s 1.0s ease-out forwards);
-    }//end of nav-btns-cont
-    &_open{
-      @include sideBarAnimation(open 1.4s 1.0s ease-out forwards);
-    }//end of nav-btns-cont
+    // &_closed{
+    //   @include sideBarAnimation(closed 1.4s 1.0s ease-out forwards);
+    // }//end of nav-btns-cont
+    // &_open{
+    //   @include sideBarAnimation(open 1.4s 1.0s ease-out forwards);
+    // }//end of nav-btns-cont
 
-    .menu-btn{
+    &__menu-btn{
       height:35px;
       width:35px;
       margin:  0 10px;
@@ -81,22 +81,23 @@
         display: none;
       }
       &_closed{
-        @include animationMenuBtn(90deg);
+        @include animationMenuBtn(1s,180deg);
       }
       &_open{
-        @include animationMenuBtn(-90deg)
+        @include animationMenuBtn(1s,90deg)
       }
     }
     &__nav-btns-cnt{
+      width:0;
       &__closed{
-
+          @include sideBarAnimation(closed 1.4s ease-out forwards);
       }
       &__open{
-
+          @include sideBarAnimation(open 1.4s ease-out forwards);
       }
       &__el{
         height:30px;
-        width:0px;
+        width:70px;
         border-radius: 10%;
         margin-right: 5px;
         display:flex;

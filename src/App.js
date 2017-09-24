@@ -46,7 +46,7 @@ render() {
                     className={this.state.active ? "nav__btns-cont__menu-btn nav__btns-cont__menu-btn_closed": "nav__btns-cont__menu-btn nav__btns-cont__menu-btn_open"} onClick={this.toggleClass}>
                   </div>
 
-                  <div className={this.state.active ? "nav__btns-cont__nav-btns-cnt nav__btns-cont__nav-btns-cnt_closed": "nav__btns-cont__nav-btns-cnt nav__btns-cont__nav-btns-cnt_open"}>
+                  <div className={this.state.active ? "nav__btns-cont__nav-btns-cnt ": "nav__btns-cont__nav-btns-cnt nav__btns-cont__nav-btns-cnt_open"}>
                     <NavLink
                       to={`/Ultramarathon_Training_App/wyswietltrening`}
                       style={{ textDecoration: 'none'}} >

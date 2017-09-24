@@ -16,7 +16,7 @@ animation: $value;
 
 @keyframes open {
   0%{
-    width:35px;
+    width:0px;
   }
   100%{
     width:168px;
@@ -27,7 +27,7 @@ animation: $value;
     width:168px;
   }
   100%{
-    width:35px;
+    width:0px;
   }
 }
 
@@ -42,11 +42,16 @@ animation: $value;
 transition: $value;
 }
 
-@mixin animationMenuBtn($value) {
-  -ms-transform: rotate($value);
-  -webkit-transform: rotate($value);
-  -o-transform: rotate($value);
-  transform: rotate($value);
+@mixin animationMenuBtn($value,$value2) {
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -o-transition: $value;
+  transition: $value;
+
+  -ms-transform: rotate($value2);
+  -webkit-transform: rotate($value2);
+  -o-transform: rotate($value2);
+  transform: rotate($value2);
 }
 
 @mixin boxShadow($color) {
