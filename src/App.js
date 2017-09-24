@@ -34,8 +34,8 @@ render() {
         <div className="container">
               <nav id="row-1">
                 <NavLink to={"/"||"/Ultramarathon_Training_App"}><div className="menu-logo"> </div></NavLink>
-                <div className={this.state.active ? "nav-btns-cont0": "nav-btns-cont1"}>
-                  <div className={this.state.active ? "menu-btn0": "menu-btn1"} onClick={this.toggleClass}></div>
+                <div className={this.state.active ? "nav-btns-cont nav-btns-cont0": "nav-btns-cont nav-btns-cont1"}>
+                  <div className={this.state.active ? "menu-btn menu-btn0": "menu-btn menu-btn1"} onClick={this.toggleClass}></div>
                   <NavLink to={`/Ultramarathon_Training_App/wyswietltrening`} style={{ textDecoration: 'none'}} ><div className="nav-btns nav-btn1-colr"><p>logowanie</p></div></NavLink>
                   <NavLink to={`/Ultramarathon_Training_App/nowekonto`} style={{ textDecoration: 'none' }} ><div className="nav-btns nav-btn2-colr"><p>nowe konto</p></div></NavLink>
                 </div>

@@ -5,6 +5,36 @@
 transition: $value;
 }
 
+
+//a part resposible for animating nav bar
+@mixin sideBarAnimation($value...) {
+-webkit-animation:$value;
+-moz-animation: $value;
+-o-animation: $value;
+animation: $value;
+}
+
+@keyframes open {
+  0%{
+    width:35px;
+  }
+  100%{
+    width:168px;
+  }
+}
+@keyframes closed {
+  0%{
+    width:168px;
+  }
+  100%{
+    width:35px;
+  }
+}
+
+
+
+
+
 @mixin animationText($value...) {
 -webkit-transition: $value;
 -moz-transition: $value;
