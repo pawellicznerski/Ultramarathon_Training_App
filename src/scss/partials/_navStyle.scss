@@ -86,7 +86,7 @@
         color: black;
         @include tablet{
           // background-color: $main-color-opacity;
-          @include linearGradientEf(-15deg,rgba(0,228,0,0.8),rgba(0,228,0,0.8) 47%,$main-color-opacity 50%,$main-color-opacity 100%);
+          @include linearGradientEf(-15deg,rgba(0,190,0,0.8),rgba(0,190,0,0.8) 47%,rgba(0,205,0,0.8) 50%,rgba(0,205,0,0.8) 100%);
           color: white;
           height:50px;
           width:150px;

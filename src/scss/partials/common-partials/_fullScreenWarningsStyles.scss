@@ -37,7 +37,7 @@
     height: 80px;
     border: 0px solid blue;
     border-radius: 2%;
-    @include linearGradientEf(-10deg,rgba(240,10,10,1),rgba(240,10,10,1) 47%,rgba(230,10,10,1) 50%,rgba(230,10,10,1) 100%);
+    @include linearGradientEf(-10deg,rgba(215,10,10,1),rgba(215,10,10,1) 47%,rgba(200,10,10,1) 50%,rgba(200,10,10,1) 100%);
 
   }
   .green-btn{
@@ -50,7 +50,7 @@
     height: 80px;
     border: 0px solid blue;
     border-radius: 2%;
-    @include linearGradientEf(-10deg,rgba(10,240,10,1),rgba(10,240,10,1) 47%,rgba(10,230,10,1) 50%,rgba(10,230,10,1) 100%);
+    @include linearGradientEf(-10deg,rgba(10,190,10,1),rgba(10,190,10,1) 47%,rgba(10,205,10,1) 50%,rgba(10,205,10,1) 100%);
 
   }
 }

@@ -73,7 +73,7 @@
     color: rgba(250,250,250,1);
 
   .errorClass{
-    border: 4px solid rgba(0,233,0,1);
+    border: 4px solid rgba(0,205,0,1);
     background-color: rgba(233,200,200,0.9);
     font-size: 20px;
   };
@@ -100,8 +100,8 @@
       height: 50px;
     };
     &:focus{
-      @include boxShadowEntry(rgba(0,233,0,1));
-      border: 4px solid rgba(0,233,0,1);
+      @include boxShadowEntry(rgba(0,205,0,1));
+      border: 4px solid rgba(0,205,0,1);
       background-color: rgba(200,233,200,0.9);
     }
   }
@@ -145,7 +145,7 @@
     // background-color: $main-color;
     border: 0px solid blue;
     border-radius: 2%;
-    @include linearGradientEf(-10deg,rgba(0,210,0,1),rgba(0,210,0,1) 47%,rgba(0,230,0,1) 50%,rgba(0,230,0,1) 100%);
+    @include linearGradientEf(-10deg,rgba(0,190,0,0.8),rgba(0,190,0,0.8) 47%,rgba(0,210,0,0.8) 50%,rgba(0,210,0,0.8) 100%);
     @include tablet{
       margin-top: 27px;
       width: 220px;
@@ -157,12 +157,12 @@
       height: 52px;
     };
     &:hover{
-      @include linearGradientEf(-10deg,rgba(0,210,0,0.8),rgba(0,210,0,0.8) 47%,rgba(0,230,0,0.8) 50%,rgba(0,230,0,0.8) 100%);
+      @include linearGradientEf(-10deg,rgba(0,190,0,1),rgba(0,190,0,1) 47%,rgba(0,205,0,1) 50%,rgba(0,205,0,1) 100%);
     };
     &:focus{
-      @include boxShadowEntrySubmit(rgba(0,233,0,1));
+      @include boxShadowEntrySubmit(rgba(0,205,0,1));
       border:0px solid blue;
-      @include linearGradientEf(-10deg,rgba(0,210,0,0.8),rgba(0,210,0,0.8) 47%,rgba(0,230,0,0.8) 50%,rgba(0,230,0,0.8) 100%);
+      @include linearGradientEf(-10deg,rgba(0,210,0,0.8),rgba(0,210,0,0.8) 47%,rgba(0,210,0,0.8) 50%,rgba(0,210,0,0.8) 100%);
     };
   };
 };

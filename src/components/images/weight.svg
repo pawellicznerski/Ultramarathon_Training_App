@@ -14,7 +14,7 @@
    viewBox="0 0 21.166666 21.166666"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.1 15371"
+   inkscape:version="0.92.2 (30a58d1, 2017-08-07)"
    sodipodi:docname="weight.svg">
   <defs
      id="defs2" />
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="4"
-     inkscape:cx="79.017505"
+     inkscape:cx="33.767505"
      inkscape:cy="16.523081"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -77,7 +77,7 @@
        y="276.4519" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.39945602px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.15998088"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.39945602px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00cc00;fill-opacity:1;stroke:none;stroke-width:0.15998088;"
        x="4.0248427"
        y="291.30756"
        id="text5390"><tspan
@@ -85,6 +85,6 @@
          id="tspan5388"
          x="4.0248427"
          y="291.30756"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.39945602px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#00ff00;stroke-width:0.15998088">1kg</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.39945602px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#00cc00;stroke-width:0.15998088;fill-opacity:1;">1kg</tspan></text>
   </g>
 </svg>
