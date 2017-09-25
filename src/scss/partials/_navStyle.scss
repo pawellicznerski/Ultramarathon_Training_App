@@ -9,7 +9,7 @@
   justify-content: space-between;
   height: 46px;
   width: 100%;
-  border: 1px solid green;
+  // border: 1px solid green;
   @include boxShadow(#888888);
   // @include tablet {
   //   height: 66px;
@@ -51,24 +51,9 @@
     justify-content: center;
     // border: 1px solid red;
     @include tablet{
-      // right:0;
-      // height: 56px;
-      // background-color: rgba(255,255,255,0);
-      // width:330px;
-      // margin-right: 20px;
+      background-color: rgba(0,0,0,0);
+      min-width: 300px;
     }
-    @include mobile2{
-      // min-width:240px;
-      // height: 60px;
-      // background-color: rgba(255,255,255,0);
-      // margin-right: 40px;
-    }
-    // &__closed{
-    //     @include sideBarAnimation(closed 1.4s ease-out forwards);
-    // }
-    // &__open{
-    //     @include sideBarAnimation(opened 1.4s ease-out forwards);
-    // }
     &__menu-btn{
       height:35px;
       width:35px;
@@ -78,14 +63,13 @@
       background-repeat: no-repeat;
       // background-color: red;
       @include tablet{
-        // display: none;
+        display: none;
       }
       &_closed{
         @include animationMenuBtn(0.7s,180deg);
       }
       &_opened{
         @include animationMenuBtn(0.7s,90deg)
-        // min-width:240px;
       }
     }
     &__link-btns-cnt{
@@ -96,6 +80,9 @@
       justify-content: space-around;
       align-items: center;
       opacity: 0;
+      @include tablet{
+        opacity: 1;
+      }
       &_opened{
         @include sideBarAnimation(closed 0.7s ease-out forwards);
         @include mobile{
@@ -121,28 +108,24 @@
         text-transform: uppercase;
         &_closed{
           display:none;
+          @include tablet{
+            color: white;
+            font-weight: bolder;
+            @include linearGradientEf(-20deg,rgba(0,190,0,1),rgba(0,190,0,1) 47%,rgba(0,210,0,1) 50%,rgba(0,210,0,1) 100%);
+            display:flex;
+          }
         }
         @include linearGradientEf(-20deg,rgba(235,235,235,1),rgba(235,235,235,1) 47%,rgba(250,250,250,1) 50%,rgba(250,250,250,1) 100%);
-        @include tablet{
-          // @include linearGradientEf(-15deg,rgba(0,190,0,0.8),rgba(0,190,0,0.8) 47%,rgba(0,205,0,0.8) 50%,rgba(0,205,0,0.8) 100%);
-          // color: white;
-          // height:50px;
-          // width:150px;
-          // border-radius: 5%;
-          // margin-right: 15px;
-        }
         @include mobile{
           font-size: 14px;
           width:110px;
           margin-right: 25px;
         }
+
         &:hover{
           background-color: white;
           border: 1px solid black;
           color: black;
-          @include tablet{
-            // background-color: rgba(240,240,240,0.9);
-          }
         }//hover
       }//nav inner btn el
     }

@@ -47,7 +47,6 @@
   justify-content: space-between;
   height: 46px;
   width: 100%;
-  border: 1px solid green;
   -webkit-box-shadow: 0px 3px 4px 0 #888888;
   -moz-box-shadow: 0px 3px 4px 0 #888888;
   -o-transform: 0px 3px 4px 0 #888888;
@@ -67,6 +66,10 @@
     display: flex;
     align-items: center;
     justify-content: center; }
+    @media (min-width: 768px) {
+      .nav__btns-cnt {
+        background-color: transparent;
+        min-width: 300px; } }
     .nav__btns-cnt__menu-btn {
       height: 35px;
       width: 35px;
@@ -74,6 +77,9 @@
       background-image: url("./components/images/menuBtn.svg");
       background-size: cover;
       background-repeat: no-repeat; }
+      @media (min-width: 768px) {
+        .nav__btns-cnt__menu-btn {
+          display: none; } }
       .nav__btns-cnt__menu-btn_closed {
         -webkit-transition: 0.7s;
         -moz-transition: 0.7s;
@@ -99,6 +105,9 @@
       justify-content: space-around;
       align-items: center;
       opacity: 0; }
+      @media (min-width: 768px) {
+        .nav__btns-cnt__link-btns-cnt {
+          opacity: 1; } }
       .nav__btns-cnt__link-btns-cnt_opened {
         -webkit-animation: closed 0.7s ease-out forwards;
         -moz-animation: closed 0.7s ease-out forwards;
@@ -138,6 +147,15 @@
         background: -moz-linear-gradient(-20deg, #ebebeb, #ebebeb 47%, #fafafa 50%, #fafafa 100%); }
         .nav__btns-cnt__link-btns-cnt__el_closed {
           display: none; }
+          @media (min-width: 768px) {
+            .nav__btns-cnt__link-btns-cnt__el_closed {
+              color: white;
+              font-weight: bolder;
+              background: repeating-linear-gradient(-20deg, #00be00, #00be00 47%, #00d200 50%, #00d200 100%);
+              background: -webkit-linear-gradient(-20deg, #00be00, #00be00 47%, #00d200 50%, #00d200 100%);
+              background: -o-linear-gradient(-20deg, #00be00, #00be00 47%, #00d200 50%, #00d200 100%);
+              background: -moz-linear-gradient(-20deg, #00be00, #00be00 47%, #00d200 50%, #00d200 100%);
+              display: flex; } }
         @media (min-width: 600px) {
           .nav__btns-cnt__link-btns-cnt__el {
             font-size: 14px;
