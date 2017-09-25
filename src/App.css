@@ -1594,7 +1594,7 @@
     font-size: 30px;
     font-weight: bold;
     color: #fafafa;
-    width: 100vw;
+    width: 100%;
     background-color: rgba(30, 30, 30, 0.4); }
     @media (min-width: 768px) {
       #fillInForm-cnt .entry-text-FIF {
@@ -1623,7 +1623,7 @@
       #fillInForm-cnt .main-error-FIF-nonactive {
         width: 800px; } }
   #fillInForm-cnt .inputs-cnts {
-    width: 100vw;
+    width: 100%;
     height: 60px;
     display: flex;
     flex-wrap: wrap;
