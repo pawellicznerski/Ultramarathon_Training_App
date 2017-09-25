@@ -1428,7 +1428,7 @@
     width: 0px; } }
 
 .select-cnt {
-  width: 100vw;
+  width: 100%;
   height: 90px;
   background-color: rgba(30, 30, 30, 0.4);
   display: flex;
@@ -1440,14 +1440,14 @@
       height: 47px;
       width: 800px; } }
   .select-cnt .descr-select {
-    width: 100vw;
+    width: 100%;
     text-align: center;
     vertical-align: sub;
     padding-top: 3px;
     font-size: 20px; }
     @media (max-width: 360px) {
       .select-cnt .descr-select {
-        font-size: 16px; } }
+        font-sizvwe: 16px; } }
     @media (min-width: 768px) {
       .select-cnt .descr-select {
         width: 398px;
@@ -1458,7 +1458,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100vw; }
+    width: 100%; }
     @media (min-width: 768px) {
       .select-cnt #select-options-cnt {
         width: 398px;
