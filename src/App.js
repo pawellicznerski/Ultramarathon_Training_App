@@ -32,54 +32,50 @@ render() {
     <Router history={history}>
       <div className="App">
         <div className="container">
-              <nav className="nav">
+            <nav className="nav">
 
-                <NavLink
-                  to={"/"||"/Ultramarathon_Training_App"}>
-                  <div className="nav__menu-logo"></div>
-                </NavLink>
+              <NavLink
+                to={"/"||"/Ultramarathon_Training_App"}>
+                <div className="nav__menu-logo"></div>
+              </NavLink>
 
+              <div className={this.state.active ?"nav__btns-cnt nav__btns-cnt_opened": "nav__btns-cnt nav__btns-cnt_closed"}>
                 <div
-                  className={this.state.active ? "nav__btns-cont nav__btns-cont_closed": "nav__btns-cont nav__btns-cont_open"}>
-
-                  <div
-                    className={this.state.active ? "nav__btns-cont__menu-btn nav__btns-cont__menu-btn_closed": "nav__btns-cont__menu-btn nav__btns-cont__menu-btn_open"} onClick={this.toggleClass}>
-                  </div>
-
-                  <div className={this.state.active ? "nav__btns-cont__nav-btns-cnt ": "nav__btns-cont__nav-btns-cnt nav__btns-cont__nav-btns-cnt_open"}>
-                    <NavLink
-                      to={`/Ultramarathon_Training_App/wyswietltrening`}
-                      style={{ textDecoration: 'none'}} >
-                      <div className="nav__btns-cont__nav-btns-cnt__el">
-                        <p className="nav__btns-cont__nav-btns-cnt__el_text">logowanie</p>
-                      </div>
-                    </NavLink>
-
-                    <NavLink
-                      to={`/Ultramarathon_Training_App/nowekonto`}
-                      style={{ textDecoration: 'none' }} >
-                      <div
-                        className="nav__btns-cont__nav-btns-cnt__el">
-                        <p className="nav__btns-cont__nav-btns-cnt__el_text">nowe konto</p>
-                      </div>
-                    </NavLink>
-                  </div>
-
+                  className={this.state.active ?"nav__btns-cnt__menu-btn nav__btns-cnt__menu-btn_opened" : "nav__btns-cnt__menu-btn nav__btns-cnt__menu-btn_closed"} onClick={this.toggleClass}>
                 </div>
 
-              </nav>
-            <Switch>
-              <Route exact path="/" component={Home}/>
-              <Route exact path="/Ultramarathon_Training_App" component={Home}/>
-              <Route exact path="/Ultramarathon_Training_App/wyswietltrening" component={EntryForm}/>
-              <Route exact path="/Ultramarathon_Training_App/nowekonto" component={FillInForm}/>
-              <Route exact path={`/Ultramarathon_Training_App/nowekonto/trainingPlan/:login`} component={TrainingPlan} state/>
-              <Route exact path={`/Ultramarathon_Training_App/nowekonto/trainingPlan/:login/PDF`} component={TrainingPlanPDF}/>
-              <Route component={NoMatch}/>
-            </Switch>
-            <footer>
-              <FooterComponent></FooterComponent>
-            </footer>
+                <div className={this.state.active ?"nav__btns-cnt__link-btns-cnt nav__btns-cnt__link-btns-cnt_opened":"nav__btns-cnt__link-btns-cnt nav__btns-cnt__link-btns-cnt_closed"}>
+                  <NavLink
+                    to={`/Ultramarathon_Training_App/wyswietltrening`}
+                    style={{ textDecoration: 'none'}} >
+                    <div className={this.state.active ?"nav__btns-cnt__link-btns-cnt__el nav__btns-cnt__link-btns-cnt__el_closed":"nav__btns-cnt__link-btns-cnt__el"}>
+                      logowanie
+                    </div>
+                  </NavLink>
+
+                  <NavLink
+                    to={`/Ultramarathon_Training_App/nowekonto`}
+                    style={{ textDecoration: 'none' }} >
+                    <div className={this.state.active ?"nav__btns-cnt__link-btns-cnt__el nav__btns-cnt__link-btns-cnt__el_closed":"nav__btns-cnt__link-btns-cnt__el"}>
+                      nowe konto
+                    </div>
+                  </NavLink>
+                </div>
+              </div>
+
+            </nav>
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/Ultramarathon_Training_App" component={Home}/>
+            <Route exact path="/Ultramarathon_Training_App/wyswietltrening" component={EntryForm}/>
+            <Route exact path="/Ultramarathon_Training_App/nowekonto" component={FillInForm}/>
+            <Route exact path={`/Ultramarathon_Training_App/nowekonto/trainingPlan/:login`} component={TrainingPlan} state/>
+            <Route exact path={`/Ultramarathon_Training_App/nowekonto/trainingPlan/:login/PDF`} component={TrainingPlanPDF}/>
+            <Route component={NoMatch}/>
+          </Switch>
+          <footer>
+            <FooterComponent/>
+          </footer>
         </div>
       </div>
     </Router>

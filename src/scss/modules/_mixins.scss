@@ -14,17 +14,57 @@ transition: $value;
 animation: $value;
 }
 
-@keyframes open {
+
+@keyframes opened {
   0%{
-    width:0px;
+    opacity:0;
+    width:0;
+  }
+  70%{
+    opacity:0;
   }
   100%{
-    width:168px;
+    opacity:1;
+    width:190px;
   }
 }
 @keyframes closed {
   0%{
-    width:168px;
+    opacity:1;
+    width:190px;
+  }
+  5%{
+    opacity:0;
+    width:190px;
+  }
+  100%{
+    width:0px;
+  }
+}
+
+@keyframes opened2 {
+  0%{
+    opacity:0;
+    width:0;
+    margin-left: 0;
+  }
+  70%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+    width:270px;
+    margin-left: 10px;
+  }
+}
+@keyframes closed2 {
+  0%{
+    opacity:1;
+    width:270px;
+  }
+  5%{
+    opacity:0;
+    width:270px;
   }
   100%{
     width:0px;

@@ -9,13 +9,14 @@
   justify-content: space-between;
   height: 46px;
   width: 100%;
+  border: 1px solid green;
   @include boxShadow(#888888);
-  @include tablet {
-    height: 66px;
-  }
-  @include laptop {
-    height: 72px;
-  }
+  // @include tablet {
+  //   height: 66px;
+  // }
+  // @include laptop {
+  //   height: 72px;
+  // }
   // menulogo----------------------------------------------------------------
   &__menu-logo{
     height: 37px;
@@ -25,50 +26,49 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    @include tablet{
-      height: 48px;
-      width:260px;
-      margin-left: 20px;
-      background-image: $logo-SVG;
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
-    @include laptop {
-      height: 55px;
-      width:280px;
-      margin-left: 30px;
-    }
+    // @include tablet{
+    //   height: 48px;
+    //   width:260px;
+    //   margin-left: 20px;
+    //   background-image: $logo-SVG;
+    //   background-size: contain;
+    //   background-repeat: no-repeat;
+    // }
+    // @include laptop {
+    //   height: 55px;
+    //   width:280px;
+    //   margin-left: 30px;
+    // }
   }// end of the logo
 
   //nav-btns----------------------------------------------------------
-  &__btns-cont{
+  &__btns-cnt{
     background-color: $main-color;
-    height: 46px;
-    min-width:35px;
+    height: 100%;
+    min-width:40px;
     display:flex;
     align-items: center;
-    // justify-content: space-between;
+    justify-content: center;
+    // border: 1px solid red;
     @include tablet{
-      right:0;
-      height: 56px;
-      background-color: rgba(255,255,255,0);
-      width:330px;
-      margin-right: 20px;
+      // right:0;
+      // height: 56px;
+      // background-color: rgba(255,255,255,0);
+      // width:330px;
+      // margin-right: 20px;
     }
-    @include laptop{
-      right:0;
-      height: 60px;
-      background-color: rgba(255,255,255,0);
-      width:390px;
-      margin-right: 40px;
+    @include mobile2{
+      // min-width:240px;
+      // height: 60px;
+      // background-color: rgba(255,255,255,0);
+      // margin-right: 40px;
     }
-    // &_closed{
-    //   @include sideBarAnimation(closed 1.4s 1.0s ease-out forwards);
-    // }//end of nav-btns-cont
-    // &_open{
-    //   @include sideBarAnimation(open 1.4s 1.0s ease-out forwards);
-    // }//end of nav-btns-cont
-
+    // &__closed{
+    //     @include sideBarAnimation(closed 1.4s ease-out forwards);
+    // }
+    // &__open{
+    //     @include sideBarAnimation(opened 1.4s ease-out forwards);
+    // }
     &__menu-btn{
       height:35px;
       width:35px;
@@ -76,68 +76,75 @@
       background-image: $menu-SVG;
       background-size: cover;
       background-repeat: no-repeat;
-      background-color: red;
+      // background-color: red;
       @include tablet{
-        display: none;
+        // display: none;
       }
       &_closed{
-        @include animationMenuBtn(1s,180deg);
+        @include animationMenuBtn(0.7s,180deg);
       }
-      &_open{
-        @include animationMenuBtn(1s,90deg)
+      &_opened{
+        @include animationMenuBtn(0.7s,90deg)
+        // min-width:240px;
       }
     }
-    &__nav-btns-cnt{
-      width:0;
-      &__closed{
-          @include sideBarAnimation(closed 1.4s ease-out forwards);
+    &__link-btns-cnt{
+      width:0px;
+      // border: 1px solid blue;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      opacity: 0;
+      &_opened{
+        @include sideBarAnimation(closed 0.7s ease-out forwards);
+        @include mobile{
+          @include sideBarAnimation(closed2 0.7s ease-out forwards);
+        }
       }
-      &__open{
-          @include sideBarAnimation(open 1.4s ease-out forwards);
+      &_closed{
+          @include sideBarAnimation(opened 0.7s ease-out forwards);
+          @include mobile{
+            @include sideBarAnimation(opened2 0.7s ease-out forwards);
+          }
       }
       &__el{
-        height:30px;
-        width:70px;
+        height:35px;
+        width:90px;
         border-radius: 10%;
-        margin-right: 5px;
-        display:flex;
-        align-items: flex-start;
-        justify-content:center;
-        opacity: 0;
-        @include linearGradientEf(-20deg,rgba(235,235,235,1),rgba(235,235,235,1) 47%,rgba(250,250,250,1) 50%,rgba(250,250,250,1) 100%);
         color: black;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        opacity: 1;
+        font-size: 11px;
+        text-transform: uppercase;
+        &_closed{
+          display:none;
+        }
+        @include linearGradientEf(-20deg,rgba(235,235,235,1),rgba(235,235,235,1) 47%,rgba(250,250,250,1) 50%,rgba(250,250,250,1) 100%);
         @include tablet{
-          @include linearGradientEf(-15deg,rgba(0,190,0,0.8),rgba(0,190,0,0.8) 47%,rgba(0,205,0,0.8) 50%,rgba(0,205,0,0.8) 100%);
-          color: white;
-          height:50px;
-          width:150px;
-          border-radius: 5%;
-          margin-right: 15px;
+          // @include linearGradientEf(-15deg,rgba(0,190,0,0.8),rgba(0,190,0,0.8) 47%,rgba(0,205,0,0.8) 50%,rgba(0,205,0,0.8) 100%);
+          // color: white;
+          // height:50px;
+          // width:150px;
+          // border-radius: 5%;
+          // margin-right: 15px;
         }
-        @include laptop{
-          height:54px;
-          width:180px;
+        @include mobile{
+          font-size: 14px;
+          width:110px;
           margin-right: 25px;
-        }
-        &_text{
-          margin-top: 10px;
-          font-size: 10px;
-          text-transform: uppercase;
-          @include tablet{
-            margin-top: 13px;
-            font-size: 20px;
-            font-weight: bold;
-          }
         }
         &:hover{
           background-color: white;
           border: 1px solid black;
           color: black;
           @include tablet{
-            background-color: rgba(240,240,240,0.9);
+            // background-color: rgba(240,240,240,0.9);
           }
         }//hover
       }//nav inner btn el
     }
   }//nav btns
-  }//and of nav
+}//and of nav
