@@ -15,7 +15,7 @@
 
 #fillInForm-cnt{
   // border:1px solid pink;
-  // height: 100vh;
+  // height: 100;
   min-height: 540px;
   width: 100%;
   margin: 48px 15px 0 15px;
@@ -26,15 +26,15 @@
   };
   @include tablet{
     height: 720px;
-    margin: 66px 10vw 0vh 10vw;
+    margin: 66px 10% 0 10%;
     width: 800px;
   };
   @include laptop{
-    margin: 70px 10vw 0vh 10vw;
+    margin: 70px 10% 0 10%;
     min-height: 940px;
   };
   .entry-text-FIF{
-  //  height: 6vh;
+  //  height: 6;
     height: 45px;
     display: flex;
     justify-content: center;

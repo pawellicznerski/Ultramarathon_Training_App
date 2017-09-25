@@ -1579,11 +1579,11 @@
   @media (min-width: 768px) {
     #fillInForm-cnt {
       height: 720px;
-      margin: 66px 10vw 0vh 10vw;
+      margin: 66px 10% 0 10%;
       width: 800px; } }
   @media (min-width: 1200px) {
     #fillInForm-cnt {
-      margin: 70px 10vw 0vh 10vw;
+      margin: 70px 10% 0 10%;
       min-height: 940px; } }
   #fillInForm-cnt .entry-text-FIF {
     height: 45px;
